@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bluetooth"
+        android:id="@+id/bluetooth_connect_btn"
+        />
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/up"
+        android:id="@+id/forward_btn"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+      android:background="@drawable/left"
+        android:id="@+id/forward_left_btn"
+        android:layout_below="@+id/forward_btn"
+        android:layout_toLeftOf="@+id/forward_btn"
+        android:layout_toStartOf="@+id/forward_btn" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/right"
+        android:id="@+id/forward_right_btn"
+        android:layout_above="@+id/reverse_btn"
+        android:layout_toRightOf="@+id/reverse_btn"
+        android:layout_toEndOf="@+id/reverse_btn" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/down"
+        android:id="@+id/reverse_btn"
+        android:layout_below="@+id/forward_left_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp" />
+
+</RelativeLayout>
